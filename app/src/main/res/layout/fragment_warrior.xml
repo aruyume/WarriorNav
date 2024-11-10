@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".WarriorFragment">
+
+    <TextView
+        android:id="@+id/tv_warrior"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/warrior" />
+
+    <EditText
+        android:id="@+id/warriorName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name" />
+
+    <EditText
+        android:id="@+id/warriorHealth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Health"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/warriorDamage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Damage"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/warriorSuperAbility"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Super ability" />
+
+    <Button
+        android:id="@+id/detailButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Details" />
+</LinearLayout>

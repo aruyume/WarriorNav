@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/warriorFragment">
+
+    <fragment
+        android:id="@+id/warriorFragment"
+        android:name="com.example.warriornav.WarriorFragment"
+        android:label="fragment_warrior"
+        tools:layout="@layout/fragment_warrior" >
+        <action
+            android:id="@+id/action_warriorFragment_to_warriorDetailFragment"
+            app:destination="@id/warriorDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/warriorDetailFragment"
+        android:name="com.example.warriornav.WarriorDetailFragment"
+        android:label="fragment_warrior_detail"
+        tools:layout="@layout/fragment_warrior_detail" />
+</navigation>
